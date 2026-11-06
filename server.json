@@ -1,0 +1,50 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.dawnwood-ai/demusic",
+  "title": "demusic",
+  "description": "Remove background music AI video models bake into clips; keep dialogue and SFX.",
+  "websiteUrl": "https://dawnwood.ai/open-source/",
+  "repository": {
+    "url": "https://github.com/dawnwood-ai/demusic",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "demusic",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "DEMUSIC_SEPARATOR",
+          "description": "demucs (local, needs demusic[demucs]) | fal (needs FAL_KEY) - default demucs",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "FAL_KEY",
+          "description": "Optional: your fal.ai key when DEMUSIC_SEPARATOR=fal",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "DEMUSIC_FFMPEG",
+          "description": "Path to ffmpeg (default: ffmpeg on PATH)",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

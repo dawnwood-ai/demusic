@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use demusic, please cite it as below."
+title: "demusic: remove the background music AI video models bake into clips"
+type: software
+authors:
+  - name: "Dawnwood"
+    website: "https://dawnwood.ai"
+repository-code: "https://github.com/dawnwood-ai/demusic"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-11-05
+keywords:
+  - remove background music
+  - AI video
+  - music detection
+  - stem separation

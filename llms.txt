@@ -1,0 +1,10 @@
+# demusic
+
+> Remove the background music AI video models (Seedance, Kling, Veo, Hailuo, Wan) bake into generated clips, keeping dialogue, sound effects and ambience. Stem separation (Demucs) + loudness gate + AudioSet music classifier; only the spans where music is heard are replaced. Python CLI + MCP server, Apache-2.0, by Dawnwood (AI drama studio).
+
+- [README](https://github.com/dawnwood-ai/demusic/blob/main/README.md): install, quickstart, options, exit codes
+- [How it works](https://github.com/dawnwood-ai/demusic/blob/main/docs/how-it-works.md): gates, calibration numbers, limits
+- [AGENTS.md](https://github.com/dawnwood-ai/demusic/blob/main/AGENTS.md): instructions for AI agents
+- [Chinese README](https://github.com/dawnwood-ai/demusic/blob/main/README.zh-CN.md)
+
+Install: pip install "demusic[demucs]"   Run: demusic strip clip.mp4   MCP: demusic mcp
